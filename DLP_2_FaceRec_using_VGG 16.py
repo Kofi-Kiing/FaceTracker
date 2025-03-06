@@ -205,7 +205,7 @@ while True:
             im = Image.fromarray(face, 'RGB')
            #Resizing into 128x128 because we trained the model with this image size.
             img_array = np.array(im)
-                    #Our keras model used a 4D tensor, (images x height x width x channel)
+                    # keras model used a 4D tensor, (images x height x width x channel)
                     #So changing dimension 128x128x3 into 1x128x128x3 
             img_array = np.expand_dims(img_array, axis=0)
             print("=======================2==============================")
